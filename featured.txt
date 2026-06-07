@@ -1,0 +1,15 @@
+<section class="products">
+
+  <a href="product.html" class="product-card">
+    <img src="images/jacket.jpg" alt="">
+    <h3>Urban Jacket</h3>
+    <p>$149</p>
+  </a>
+
+  <a href="product.html" class="product-card">
+    <img src="images/tee.jpg" alt="">
+    <h3>Premium Tee</h3>
+    <p>$45</p>
+  </a>
+
+</section>

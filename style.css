@@ -1,0 +1,40 @@
+body{
+  font-family:Inter,sans-serif;
+  background:#f7f5f0;
+  color:#1b1b1b;
+  margin:0;
+}
+
+nav{
+  display:flex;
+  gap:20px;
+  padding:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.product{
+  border:1px solid #ddd;
+  padding:20px;
+}
+
+.product-page{
+  display:grid;
+  grid-template-columns:
+  1fr 1fr;
+  gap:50px;
+  padding:50px;
+}
+
+button{
+  background:#1b1b1b;
+  color:white;
+  border:none;
+  padding:15px 25px;
+  cursor:pointer;
+}
