@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="page-content checkout-page">
+    <section class="checkout-form-section">
+      <h1>Checkout</h1>
+      <form id="checkout-form">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+        <label for="address">Shipping address</label>
+        <input type="text" id="address" name="address" placeholder="123 Main Street" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="New York" required>
+
+        <div class="form-row">
+          <div>
+            <label for="postal-code">Postal code</label>
+            <input type="text" id="postal-code" name="postalCode" placeholder="10001" required>
+          </div>
+          <div>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="United States" required>
+          </div>
+        </div>
+
+        <label for="payment-method">Payment method</label>
+        <select id="payment-method" name="paymentMethod" required>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="apple-pay">Apple Pay</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+    <aside class="order-summary-section">
+      <div class="checkout-summary" id="checkout-summary"></div>
+    </aside>
+  </main>
+  <script src="cart.js"></script>
+</body>
+</html>

@@ -1,7 +1,53 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="shop.html">Shop</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="cart.html">Cart</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Men</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">New Arrival</p>
+        <h1>Refined menswear for everyday essentials.</h1>
+        <p>Shop premium classics, outerwear, and travel-ready accessories designed for modern style and comfort.</p>
+        <a class="button" href="shop.html">Shop the Collection</a>
+      </div>
+      <img src="images/jacket.svg" alt="Urban Jacket">
+    </section>
+  </header>
+  <main class="featured-section">
+    <h2>Featured Products</h2>
+    <div class="grid featured-grid">
+      <div class="product-card">
+        <img src="images/jacket.svg" alt="Urban Jacket">
+        <h3>Urban Jacket</h3>
+        <p class="price">$149</p>
+        <div class="actions">
+          <a class="button button-secondary" href="product.html?product=urban-jacket">View Product</a>
+          <button onclick="addToCart('urban-jacket')">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/bag.svg" alt="Leather Weekender">
+        <h3>Leather Weekender</h3>
+        <p class="price">$220</p>
+        <div class="actions">
+          <a class="button button-secondary" href="product.html?product=leather-weekender">View Product</a>
+          <button onclick="addToCart('leather-weekender')">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="cart.js"></script>
+</body>
+</html>

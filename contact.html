@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Contact Us</h1>
-
-<form>
-
-<input
-type="text"
-placeholder="Name"
-required>
-
-<input
-type="email"
-placeholder="Email"
-required>
-
-<textarea
-placeholder="Message">
-</textarea>
-
-<button type="submit">
-Send Message
-</button>
-
-</form>
-
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="page-content contact-page">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <script src="cart.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thanks for reaching out! We will reply soon.');
+      event.target.reset();
+    });
+  </script>
 </body>
 </html>

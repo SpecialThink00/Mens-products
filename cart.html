@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Cart</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Your Cart</h1>
-
-<div id="cart-items"></div>
-
-<h2 id="total">$0</h2>
-
-<button>
-Checkout
-</button>
-
-<script src="js/cart.js"></script>
-
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="page-content cart-page">
+    <h1>Your Cart</h1>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <div class="summary-row">
+        <span>Total</span>
+        <strong id="total">$0</strong>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </main>
+  <script src="cart.js"></script>
 </body>
 </html>

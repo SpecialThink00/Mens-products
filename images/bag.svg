@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="bagTitle">
+  <title id="bagTitle">Leather Weekender</title>
+  <rect width="800" height="600" fill="#eef0ee" />
+  <rect x="180" y="180" width="440" height="240" rx="40" fill="#cebfa5" stroke="#1b1b1b" stroke-width="16" />
+  <path d="M 260 180 Q 260 120 400 120 Q 540 120 540 180" fill="#1b1b1b" />
+  <rect x="300" y="140" width="200" height="40" rx="20" fill="#f4f1ec" />
+  <circle cx="360" cy="320" r="28" fill="#1b1b1b" />
+  <circle cx="440" cy="320" r="28" fill="#1b1b1b" />
+  <text x="50%" y="560" font-family="Inter, system-ui, sans-serif" font-size="34" text-anchor="middle" fill="#1b1b1b">Leather Weekender</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="jacketTitle">
+  <title id="jacketTitle">Urban Jacket</title>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d8d6d1" />
+      <stop offset="100%" stop-color="#b5b3ae" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f4f1ec" />
+  <rect x="180" y="120" width="440" height="360" rx="28" fill="url(#grad1)" stroke="#1b1b1b" stroke-width="18" />
+  <rect x="260" y="140" width="70" height="280" rx="18" fill="#1b1b1b" />
+  <rect x="470" y="140" width="70" height="280" rx="18" fill="#1b1b1b" />
+  <path d="M 240 140 L 560 140 Q 500 60 400 140 Q 300 60 240 140 Z" fill="#1b1b1b" />
+  <path d="M 240 460 L 560 460 Q 500 540 400 460 Q 300 540 240 460 Z" fill="#1b1b1b" />
+  <text x="50%" y="560" font-family="Inter, system-ui, sans-serif" font-size="36" text-anchor="middle" fill="#1b1b1b">Urban Jacket</text>
+</svg>
